@@ -209,7 +209,7 @@ namespace RandomIDCard.Common
             //随机码
             string code = rd.Next(10, 99).ToString("##");
             if (sex != null)
-                code = code + sex == "男" ? getNumber(true) : getNumber(false);
+                code = code + (sex == "男" ? getNumber(true) : getNumber(false));
             else
                 code = code + rd.Next(0, 9).ToString();
             code = code + rd.Next(0, 9).ToString();
