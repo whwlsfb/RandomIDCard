@@ -57,7 +57,6 @@ namespace RandomIDCard
             }
             area_list.Items.Add("随机");
             city_list.Items.Add("随机");
-            sex_list.Items.Add("随机");
             prov_list.SelectedIndex = 0;
             sex_list.SelectedIndex = 0;
         }
