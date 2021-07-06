@@ -80,6 +80,8 @@ namespace RandomIDCard
             // 
             // prov_list
             // 
+            this.prov_list.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.prov_list.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.prov_list.FormattingEnabled = true;
             this.prov_list.Location = new System.Drawing.Point(90, 20);
@@ -90,6 +92,8 @@ namespace RandomIDCard
             // 
             // area_list
             // 
+            this.area_list.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.area_list.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.area_list.FormattingEnabled = true;
             this.area_list.Location = new System.Drawing.Point(90, 46);
@@ -100,6 +104,8 @@ namespace RandomIDCard
             // 
             // city_list
             // 
+            this.city_list.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.city_list.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.city_list.FormattingEnabled = true;
             this.city_list.Location = new System.Drawing.Point(90, 72);
@@ -109,6 +115,8 @@ namespace RandomIDCard
             // 
             // sex_list
             // 
+            this.sex_list.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.sex_list.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.sex_list.FormattingEnabled = true;
             this.sex_list.Items.AddRange(new object[] {
@@ -158,6 +166,7 @@ namespace RandomIDCard
             // 
             // date_year
             // 
+            this.date_year.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.date_year.Enabled = false;
             this.date_year.Location = new System.Drawing.Point(291, 60);
             this.date_year.Maximum = new decimal(new int[] {
@@ -181,6 +190,7 @@ namespace RandomIDCard
             // 
             // date_month
             // 
+            this.date_month.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.date_month.Enabled = false;
             this.date_month.Location = new System.Drawing.Point(380, 60);
             this.date_month.Maximum = new decimal(new int[] {
@@ -204,6 +214,7 @@ namespace RandomIDCard
             // 
             // date_day
             // 
+            this.date_day.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.date_day.Enabled = false;
             this.date_day.Location = new System.Drawing.Point(470, 60);
             this.date_day.Maximum = new decimal(new int[] {
@@ -227,6 +238,7 @@ namespace RandomIDCard
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(256, 49);
             this.label5.Name = "label5";
@@ -236,6 +248,7 @@ namespace RandomIDCard
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(345, 49);
             this.label6.Name = "label6";
@@ -245,6 +258,7 @@ namespace RandomIDCard
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(434, 49);
             this.label7.Name = "label7";
@@ -254,6 +268,7 @@ namespace RandomIDCard
             // 
             // date_random_year
             // 
+            this.date_random_year.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.date_random_year.AutoSize = true;
             this.date_random_year.Checked = true;
             this.date_random_year.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -267,6 +282,7 @@ namespace RandomIDCard
             // 
             // date_random_month
             // 
+            this.date_random_month.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.date_random_month.AutoSize = true;
             this.date_random_month.Checked = true;
             this.date_random_month.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -280,6 +296,7 @@ namespace RandomIDCard
             // 
             // date_random_day
             // 
+            this.date_random_day.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.date_random_day.AutoSize = true;
             this.date_random_day.Checked = true;
             this.date_random_day.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -293,6 +310,8 @@ namespace RandomIDCard
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.prov_list);
             this.groupBox1.Controls.Add(this.date_random_day);
             this.groupBox1.Controls.Add(this.area_list);
@@ -319,6 +338,7 @@ namespace RandomIDCard
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Location = new System.Drawing.Point(548, 12);
             this.groupBox2.Name = "groupBox2";
@@ -329,6 +349,9 @@ namespace RandomIDCard
             // 
             // result_list
             // 
+            this.result_list.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.result_list.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.id_number_col,
             this.prov_col,
@@ -381,19 +404,19 @@ namespace RandomIDCard
             this.copy_menu,
             this.clear_menu});
             this.list_menu.Name = "list_menu";
-            this.list_menu.Size = new System.Drawing.Size(181, 70);
+            this.list_menu.Size = new System.Drawing.Size(101, 48);
             // 
             // copy_menu
             // 
             this.copy_menu.Name = "copy_menu";
-            this.copy_menu.Size = new System.Drawing.Size(180, 22);
+            this.copy_menu.Size = new System.Drawing.Size(100, 22);
             this.copy_menu.Text = "复制";
             this.copy_menu.Click += new System.EventHandler(this.copy_menu_Click);
             // 
             // clear_menu
             // 
             this.clear_menu.Name = "clear_menu";
-            this.clear_menu.Size = new System.Drawing.Size(180, 22);
+            this.clear_menu.Size = new System.Drawing.Size(100, 22);
             this.clear_menu.Text = "清空";
             this.clear_menu.Click += new System.EventHandler(this.clear_menu_Click);
             // 
