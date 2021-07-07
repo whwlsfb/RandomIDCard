@@ -18,30 +18,6 @@ namespace RandomIDCard
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            var result = IdCardNumber.Random(1,
-                prov_list.Text == "随机" ? null : prov_list.Text,
-                area_list.Text == "随机" ? null : area_list.Text,
-                city_list.Text == "随机" ? null : city_list.Text,
-                date_random_year.Checked ? null : (int?)int.Parse(date_year.Value.ToString()),
-                date_random_month.Checked ? null : (int?)int.Parse(date_month.Value.ToString()),
-                date_random_day.Checked ? null : (int?)int.Parse(date_day.Value.ToString()),
-                sex_list.Text == "随机" ? null : sex_list.Text
-            );
-            foreach (var item in result)
-            {
-                var listItem = new ListViewItem();
-                listItem.Text = item.CardNumber;
-                listItem.SubItems.Add(item.Province);
-                listItem.SubItems.Add(item.Area);
-                listItem.SubItems.Add(item.City);
-                listItem.SubItems.Add(item.Birthday.ToString("yyyy-MM-dd"));
-                listItem.SubItems.Add(item.Sex == 1 ? "男" : "女");
-                result_list.Items.Add(listItem);
-            }
-        }
-
         private void MainForm_Load(object sender, EventArgs e)
         {
             initList();
@@ -110,6 +86,30 @@ namespace RandomIDCard
         private void clear_menu_Click(object sender, EventArgs e)
         {
             result_list.Items.Clear();
+        }
+
+        private void gen_btn_Click(object sender, EventArgs e)
+        {
+            var result = IdCardNumber.Random(1,
+                prov_list.Text == "随机" ? null : prov_list.Text,
+                area_list.Text == "随机" ? null : area_list.Text,
+                city_list.Text == "随机" ? null : city_list.Text,
+                date_random_year.Checked ? null : (int?)int.Parse(date_year.Value.ToString()),
+                date_random_month.Checked ? null : (int?)int.Parse(date_month.Value.ToString()),
+                date_random_day.Checked ? null : (int?)int.Parse(date_day.Value.ToString()),
+                sex_list.Text == "随机" ? null : sex_list.Text
+            );
+            foreach (var item in result)
+            {
+                var listItem = new ListViewItem();
+                listItem.Text = item.CardNumber;
+                listItem.SubItems.Add(item.Province);
+                listItem.SubItems.Add(item.Area);
+                listItem.SubItems.Add(item.City);
+                listItem.SubItems.Add(item.Birthday.ToString("yyyy-MM-dd"));
+                listItem.SubItems.Add(item.Sex == 1 ? "男" : "女");
+                result_list.Items.Add(listItem);
+            }
         }
     }
 }

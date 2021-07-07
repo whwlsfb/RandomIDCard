@@ -30,7 +30,7 @@ namespace RandomIDCard
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
+            this.gen_btn = new System.Windows.Forms.Button();
             this.prov_list = new System.Windows.Forms.ComboBox();
             this.area_list = new System.Windows.Forms.ComboBox();
             this.city_list = new System.Windows.Forms.ComboBox();
@@ -68,15 +68,15 @@ namespace RandomIDCard
             this.list_menu.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // gen_btn
             // 
-            this.button1.Location = new System.Drawing.Point(6, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(71, 107);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "生成";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.gen_btn.Location = new System.Drawing.Point(6, 20);
+            this.gen_btn.Name = "gen_btn";
+            this.gen_btn.Size = new System.Drawing.Size(71, 107);
+            this.gen_btn.TabIndex = 0;
+            this.gen_btn.Text = "生成";
+            this.gen_btn.UseVisualStyleBackColor = true;
+            this.gen_btn.Click += new System.EventHandler(this.gen_btn_Click);
             // 
             // prov_list
             // 
@@ -339,7 +339,7 @@ namespace RandomIDCard
             // groupBox2
             // 
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.gen_btn);
             this.groupBox2.Location = new System.Drawing.Point(548, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(83, 133);
@@ -429,7 +429,7 @@ namespace RandomIDCard
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "MainForm";
-            this.Text = "随机身份证号码生成器";
+            this.Text = "随机身份证号码生成器 V1.0";
             this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.date_year)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.date_month)).EndInit();
@@ -444,7 +444,7 @@ namespace RandomIDCard
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button gen_btn;
         private System.Windows.Forms.ComboBox prov_list;
         private System.Windows.Forms.ComboBox area_list;
         private System.Windows.Forms.ComboBox city_list;
